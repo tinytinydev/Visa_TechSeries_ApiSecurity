@@ -16,6 +16,7 @@ const req = https.request(
     //Configure your certificate options here
     /**
      * Hint: You will need a Private Key, Public Key (Cert) and Server's Certification Authority Cert to send the request
+     * You can also test with the unauthorized certs to make sure an unauthorized client is not able to access the server
      **/
     //Modify END
     path: "/payment/push",

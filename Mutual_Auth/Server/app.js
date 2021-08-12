@@ -10,11 +10,13 @@ var app = express()
 app.use(express.json());
 
 const options = {
+  //Modify START
   //Configure your certificate options here
   /**
    * Hint: You will need a Private Key, Public Key (Cert) and Client's Certification Authority Cert
    * You also will need to tell https server to only allow authorized users and also to always request for a cert
   **/
+ //Modify END
 };
 
 https
