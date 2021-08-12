@@ -13,8 +13,8 @@ const options = {
   //Modify START
   //Configure your certificate options here
   /**
-   * Hint: You will need a Private Key, Public Key (Cert) and Client's Certification Authority Cert
-   * You also will need to tell https server to only allow authorized users and also to always request for a cert
+   * Hint: You will need the Servers' Private Key, Public Cert and Client's Certification Authority Cert
+   * You also will need to tell https server to always request for a cert
   **/
  //Modify END
 };
