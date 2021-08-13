@@ -17,6 +17,7 @@ const req = https.request(
     /**
      * Hint: You will need a Private Key, Public Key (Cert) and Server's Certification Authority Cert to send the request
      * You can also test with the unauthorized certs to make sure an unauthorized client is not able to access the server
+     * Possible fields in RequestOptions: http://definitelytyped.org/docs/node--node-0.8.8/interfaces/https.requestoptions.html
      **/
     //Modify END
     path: "/payment/push",
@@ -28,6 +29,8 @@ const req = https.request(
     }
   },
   function(response) {
+    console.log();
+    console.log("===== Mututal Authentication Success ! =====");
     console.log("Response Status Code: ", response.statusCode);
     console.log(
       "Server Host Name: " + response.socket.getPeerCertificate().subject.CN
@@ -36,8 +39,19 @@ const req = https.request(
       console.log(`Wrong status code`);
       return;
     }
+
+    let body = ''
+    response.on('data',function(chunk){
+      body += chunk;
+    });
+    response.on('end',()=>{
+      console.log(body);
+      console.log();
+    })
   }
 );
+
+
 
 //DO NOT MODIFY CODES BELOW
 req.on("socket", function(socket) {
@@ -46,7 +60,6 @@ req.on("socket", function(socket) {
       console.log(`SOCKET AUTH FAILED ${socket.authorizationError}`);
     }
     console.log("");
-    console.log("Congratulations! Mutual Auth Success!");
   });
 });
 

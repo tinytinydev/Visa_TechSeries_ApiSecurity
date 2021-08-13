@@ -15,6 +15,7 @@ const options = {
   /**
    * Hint: You will need the Servers' Private Key, Public Cert and Client's Certification Authority Cert
    * You also will need to tell https server to always request for a cert
+   * Possible fields in RequestOptions: http://definitelytyped.org/docs/node--node-0.8.8/interfaces/https.requestoptions.html
   **/
  //Modify END
 };
