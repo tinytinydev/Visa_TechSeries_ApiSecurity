@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "c4596fbb-99e4-4e88-8b62-4a02bafe3cfd",
+		"_postman_id": "cd0e3af1-7fea-4160-97d0-a1db468b488a",
 		"name": "Visa Tech Series",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -11,6 +11,11 @@
 				"auth": {
 					"type": "basic",
 					"basic": [
+						{
+							"key": "username",
+							"value": "testUser",
+							"type": "string"
+						},
 						{
 							"key": "password",
 							"value": "Visa@SmuTechSeries2021",
