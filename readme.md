@@ -55,9 +55,9 @@ node app.js
 ```
 
 ## References
-https://support.managed.com/kb/a683/how-to-modify-your-hosts-file-so-you-can-work-on-a-site-that-is-not-yet-live.aspx 
-https://www.matteomattei.com/client-and-server-ssl-mutual-authentication-with-nodejs/ 
-https://www.npmjs.com/package/basic-auth 
-https://www.npmjs.com/package/crypto 
-https://developer.visa.com/pages/working-with-visa-apis/x-pay-token 
-http://definitelytyped.org/docs/node--node-0.8.8/interfaces/https.requestoptions.html 
+* https://support.managed.com/kb/a683/how-to-modify-your-hosts-file-so-you-can-work-on-a-site-that-is-not-yet-live.aspx 
+* https://www.matteomattei.com/client-and-server-ssl-mutual-authentication-with-nodejs/ * 
+* https://www.npmjs.com/package/basic-auth 
+* https://www.npmjs.com/package/crypto 
+* https://developer.visa.com/pages/working-with-visa-apis/x-pay-token 
+* http://definitelytyped.org/docs/node--node-0.8.8/interfaces/https.requestoptions.html 

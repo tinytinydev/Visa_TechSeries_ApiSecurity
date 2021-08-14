@@ -1,0 +1,192 @@
+{
+	"info": {
+		"_postman_id": "c4596fbb-99e4-4e88-8b62-4a02bafe3cfd",
+		"name": "Visa Tech Series",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Basic Auth Test Authentication",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Visa@SmuTechSeries2021",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"from\": \"bankA\",\n    \"to\": \"bankB\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://server.visa.io:3001/payment/push",
+					"protocol": "https",
+					"host": [
+						"server",
+						"visa",
+						"io"
+					],
+					"port": "3001",
+					"path": [
+						"payment",
+						"push"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mutual Auth Test Authentication",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"from\": \"bankA\",\n    \"to\": \"bankB\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://server.visa.io:3001/payment/push",
+					"protocol": "https",
+					"host": [
+						"server",
+						"visa",
+						"io"
+					],
+					"port": "3001",
+					"path": [
+						"payment",
+						"push"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "XPayToken Authentication",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-PAY-TOKEN",
+						"value": "{{X-PAY-TOKEN}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"from\": \"bankA\",\n    \"to\": \"bankB\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://server.visa.io:3001/payment/push?apikey={{apikey}}",
+					"protocol": "https",
+					"host": [
+						"server",
+						"visa",
+						"io"
+					],
+					"port": "3001",
+					"path": [
+						"payment",
+						"push"
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "{{apikey}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"const crypto = require(\"crypto-js\")",
+					"",
+					"let timestamp = pm.collectionVariables.get(\"timestamp\");",
+					"let resourcePath = pm.collectionVariables.get(\"resourcePath\");",
+					"let apiKey = pm.collectionVariables.get(\"apikey\");",
+					"let sharedSecret = pm.collectionVariables.get(\"sharedSecret\");",
+					"let postBody = pm.collectionVariables.get(\"postBody\");",
+					"",
+					"let preHashString = timestamp + resourcePath + \"apikey=\" + apiKey + postBody",
+					"",
+					"console.log(preHashString);",
+					"",
+					"let hashString = crypto.HmacSHA256(preHashString,sharedSecret);",
+					"let hexed = hashString.toString(crypto.enc.Hex);",
+					"let xPayToken = \"xv2:\" + timestamp + \":\" + hexed;",
+					"",
+					"pm.collectionVariables.set(\"X-PAY-TOKEN\",xPayToken);"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "timestamp",
+			"value": "1633219200"
+		},
+		{
+			"key": "resourcePath",
+			"value": "/payment/push"
+		},
+		{
+			"key": "postBody",
+			"value": "{\"from\":\"bankA\",\"to\":\"bankB\"}"
+		},
+		{
+			"key": "apikey",
+			"value": "VmlzYUBTbXVUZWNoU2VyaWVzMjAyMQ=="
+		},
+		{
+			"key": "sharedSecret",
+			"value": "TechSeries@Smu"
+		},
+		{
+			"key": "X-PAY-TOKEN",
+			"value": ""
+		}
+	]
+}
