@@ -39,11 +39,10 @@ app.post('/payment/push', function (req, res) {
       let sharedMessage = "" //OBTAIN the hashed message in the X-PAY-TOKEN
       /** MODIFY END */
 
-      /**Generate Expected Hashed Message START**/
+      //Generate Expected Hashed Message
       let queryStr = "apikey=" + acceptedApiKey;
       var preHashString = timeStamp + "/payment/push" + queryStr + JSON.stringify(req.body);
       var expectedMessage = crypto.createHmac('SHA256', sharedSecret).update(preHashString).digest('hex');
-      /**Generate Expected Hashed Message END**/
 
       console.log();
       console.log("Expected from Client: " + expectedMessage);

@@ -53,6 +53,8 @@ You can run the app by calling this command on Terminal in Visual Studio Code
 ```
 node app.js
 ```
+You can also import the Postman collection in the repository to test that the Server is working correctly. For Mutual Auth's call to work on Postman. Do ensure that the Cert is configured in the Postman Settings.
+![Postman Settings with Certificate configured](assets/postman_settings.png)
 
 ## References
 * https://support.managed.com/kb/a683/how-to-modify-your-hosts-file-so-you-can-work-on-a-site-that-is-not-yet-live.aspx 
