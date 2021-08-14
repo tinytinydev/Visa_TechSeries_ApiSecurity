@@ -15,7 +15,7 @@ cd /etc
 
 3. Type in the folllowing command to edit the host address
 ```
-sudo noan /etc/hosts
+sudo nano /etc/hosts
 ```
 You will be prompted to enter password. Enter your Mac's password
 
