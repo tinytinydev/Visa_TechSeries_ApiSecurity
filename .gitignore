@@ -78,3 +78,6 @@ typings/
 Mutual_Auth/Completed
 Mutual_Auth/Client/client_completed.js
 Mutual_Auth/Server/server_completed.js
+Basic_Auth/Server/server_completed.js
+XPayToken/Client/client_completed.js
+XPayToken/Server/server_completed.js
