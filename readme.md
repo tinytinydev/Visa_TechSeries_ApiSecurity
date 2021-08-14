@@ -1,7 +1,16 @@
 # Visa Hands-On Exercises @ SMU Tech Series
 
+## Introduction
+There are 3 different Hands-On exercises on API Security in this repository.
+1. Basic Authentication
+2. Mutual Authentication
+3. X-Pay-Token Authentication
+
+Each of this exercises are stored in their respective folder with a Server and Client folder. The Server serves are a API provider and Client serves as a API consumer.
+
 ## Setup
 You will need NodeJs for this exercises. You can install NodeJs from here: https://nodejs.org/en/
+The recommended IDE (Code Editor) for the exercises is Visual Studio Code.
 
 In addition, do register this custom addresses to your hosts file so that the sample URLS can be used for this exercises:
 
@@ -36,3 +45,19 @@ Close and save the file.
 
 ### Install Node Modules
 Open the project in Visual Studio and run npm install in your command prompt/powershell/terminal from the project directory.
+
+## Testing your Code
+Run node.js from the Server and Client folder for each Authentication exercise to check if the implementation is successful.
+You can run the app by calling this command on Terminal in Visual Studio Code
+
+```
+node app.js
+```
+
+## References
+https://support.managed.com/kb/a683/how-to-modify-your-hosts-file-so-you-can-work-on-a-site-that-is-not-yet-live.aspx 
+https://www.matteomattei.com/client-and-server-ssl-mutual-authentication-with-nodejs/ 
+https://www.npmjs.com/package/basic-auth 
+https://www.npmjs.com/package/crypto 
+https://developer.visa.com/pages/working-with-visa-apis/x-pay-token 
+http://definitelytyped.org/docs/node--node-0.8.8/interfaces/https.requestoptions.html 
