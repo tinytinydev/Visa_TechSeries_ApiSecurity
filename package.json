@@ -1,0 +1,27 @@
+{
+  "name": "visa_api_security",
+  "version": "1.0.0",
+  "description": "Hands on Exercise for SMU Tech Series",
+  "main": "index.js",
+  "dependencies": {
+    "basic-auth": "^2.0.1",
+    "express": "^4.17.1",
+    "https": "^1.0.0",
+    "fs": "^0.0.1-security",
+    "query-string": "^7.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tinytinydev/Visa_TechSeries_ApiSecurity.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tinytinydev/Visa_TechSeries_ApiSecurity/issues"
+  },
+  "homepage": "https://github.com/tinytinydev/Visa_TechSeries_ApiSecurity#readme"
+}
