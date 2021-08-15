@@ -53,6 +53,18 @@ You can run the app by calling this command on Terminal in Visual Studio Code
 ```
 node app.js
 ```
+A shell script and powershell script (startup.sh/startup.ps1) has been written to help start the project easily. You will be prompted to enter the project you want to start. Either either Basic_Auth , Mutual_Auth or XPayToken to start the project you woul like to test.
+
+Start the shell script (startup.sh) on a Mac machine using this command
+```
+    ./start.sh
+```
+
+Start the powershell script (startup.ps1) on a Windows machine using this command
+```
+    powershell .\startup.ps1
+```
+
 You can also import the Postman collection in the repository to test that the Server is working correctly. For Mutual Auth's call to work on Postman. Do ensure that the Cert is configured in the Postman Settings.
 ![Postman Settings with Certificate configured](assets/postman_settings.png)
 
