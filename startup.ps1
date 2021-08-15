@@ -4,4 +4,4 @@ Set-Location $project
 
 invoke-expression 'cmd /c start powershell -NoExit -Command {cd server; node app.js}'
 Start-Sleep -s 1
-invoke-expression 'cmd /c start poewrshell -NoExit -Command {cd client; node app.js}'
+invoke-expression 'cmd /c start powershell -NoExit -Command {cd client; node app.js}'
