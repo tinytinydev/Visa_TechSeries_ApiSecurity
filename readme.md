@@ -36,13 +36,18 @@ You will be prompted to enter password. Enter your Mac's password
 Press Control X to exit from file indicate Yes to save changes.
 
 ### For Windows
-Follow this [website](https://support.managed.com/kb/a683/how-to-modify-your-hosts-file-so-you-can-work-on-a-site-that-is-not-yet-live.aspx) and add the same address in the file below
+1. Open Notepad (You may have to run it as admin)
+2. Navigate to C:\Windows\System32\drivers\etc
+3. In the lower right corner of the Open dialog box, change the Text Documents (*.txt)  to All Files.
+4. Double click on hosts
+5. Add these 2 lines at the bottom of the file.
 ```
 127.0.0.1 server.visa.io
 127.0.0.1 client.bankA.io
 ```
-Close and save the file.
-
+6. Close and save the file.
+   
+Alternatively, you can follow this [website](https://support.managed.com/kb/a683/how-to-modify-your-hosts-file-so-you-can-work-on-a-site-that-is-not-yet-live.aspx) and add both the address at the bottom of the file.
 ### Install Node Modules
 Open the project in Visual Studio and run npm install in your command prompt/powershell/terminal from the project directory.
 
