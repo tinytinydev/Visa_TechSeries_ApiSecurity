@@ -1,6 +1,7 @@
 # Mutual Authentication
 Mutual Authentication is a two-way authentication (2-Way SSL) which allows a Server and Client to authenticate each other before any communication happens.
 This is usually done via a SSL Cert from both parties. Both parties have to cross check with each other's Certification Authority (CA) to ensure that the certs presented by each other is trusted.
+For this exercise, all the required certs has been included in the project.
 
 ## Server
 The server (Producer) exposes API(s) that can be called by a client (Consumer). In this example the server expose a API for Push Payment (/payment/push).
