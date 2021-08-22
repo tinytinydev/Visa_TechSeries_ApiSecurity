@@ -11,7 +11,7 @@ Assume that you are logged in as a user from Bank A.
 
 ## Setup
 Please download Burp Suite Community Edition [here](https://portswigger.net/burp/communitydownload).
-Run the simulation API app by calling this command:
+Navigate to BrokenObjectLevelDemo directory and run the simulation API app by calling this command:
 ```
 node app.js
 ```

@@ -130,6 +130,105 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Broken Obj Level Auth - Unauthorized UUID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/secretdoc/uuid/69ce9470-0467-4b35-89f2-b163164ebe99",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"secretdoc",
+						"uuid",
+						"69ce9470-0467-4b35-89f2-b163164ebe99"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Broken Obj Level Auth - Authorized UUID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/secretdoc/uuid/00a2553f-cf87-477a-8d66-d495ccaae864",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"secretdoc",
+						"uuid",
+						"00a2553f-cf87-477a-8d66-d495ccaae864"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Broken Obj Level Auth - Unprotected",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/secretdoc/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"secretdoc",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Broken Obj Level Auth - Protected Unauthorized",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/secretdoc/protected/6",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"secretdoc",
+						"protected",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Broken Obj Level Auth - Protected Authorized",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/secretdoc/protected/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"secretdoc",
+						"protected",
+						"1"
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"event": [
