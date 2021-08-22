@@ -1,0 +1,38 @@
+{
+    "00a2553f-cf87-477a-8d66-d495ccaae864": {
+        "id": "00a2553f-cf87-477a-8d66-d495ccaae864",
+        "orgId": 1,
+        "name": "Document for Bank A",
+        "filepath": "./secretdocs/bankA.txt"
+    },
+    "c311630d-4839-43ce-bcff-88f8a0d66cdd": {
+        "id": "c311630d-4839-43ce-bcff-88f8a0d66cdd",
+        "orgId": 1,
+        "name": "Document for Bank A",
+        "filepath": "./secretdocs/bankA.txt"
+    },
+    "596e9ade-bdd8-47cd-9000-89384aa72de0": {
+        "id": "596e9ade-bdd8-47cd-9000-89384aa72de0",
+        "orgId": 1,
+        "name": "Document for Bank A",
+        "filepath": "./secretdocs/bankA.txt"
+    },
+    "256482c0-7a66-4365-9b0c-47e92f1772ca": {
+        "id": "256482c0-7a66-4365-9b0c-47e92f1772ca",
+        "orgId": 1,
+        "name": "Document for Bank A",
+        "filepath": "./secretdocs/bankA.txt"
+    },
+    "12efac03-55ab-4303-9b03-9218a3859bed": {
+        "id": "12efac03-55ab-4303-9b03-9218a3859bed",
+        "orgId": 1,
+        "name": "Document for Bank A",
+        "filepath": "./secretdocs/bankA.txt"
+    },
+    "69ce9470-0467-4b35-89f2-b163164ebe99": {
+        "id": "69ce9470-0467-4b35-89f2-b163164ebe99",
+        "orgId": 2,
+        "name": "Document for Bank B",
+        "filepath": "./secretdocs/bankB.txt"
+    }
+}

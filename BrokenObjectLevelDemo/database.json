@@ -1,0 +1,38 @@
+{
+    "1": {
+        "id": 1,
+        "orgId": 1,
+        "name": "Document for Bank A",
+        "filepath": "./secretdocs/bankA.txt"
+    },
+    "2": {
+        "id": 2,
+        "orgId": 1,
+        "name": "Document for Bank A",
+        "filepath": "./secretdocs/bankA.txt"
+    },
+    "3": {
+        "id": 3,
+        "orgId": 1,
+        "name": "Document for Bank A",
+        "filepath": "./secretdocs/bankA.txt"
+    },
+    "4": {
+        "id": 4,
+        "orgId": 1,
+        "name": "Document for Bank A",
+        "filepath": "./secretdocs/bankA.txt"
+    },
+    "5": {
+        "id": 5,
+        "orgId": 1,
+        "name": "Document for Bank A",
+        "filepath": "./secretdocs/bankA.txt"
+    },
+    "6": {
+        "id": 6,
+        "orgId": 2,
+        "name": "Document for Bank B",
+        "filepath": "./secretdocs/bankB.txt"
+    }
+}
