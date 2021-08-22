@@ -1,4 +1,4 @@
-# Visa Hands-On Exercises @ SMU Tech Series
+# Visa Hands-On Exercises @ Ellipsis Tech Series
 
 ## Introduction
 There are 3 different Hands-On exercises on API Security in this repository.
@@ -6,7 +6,9 @@ There are 3 different Hands-On exercises on API Security in this repository.
 2. Mutual Authentication
 3. X-Pay-Token Authentication
 
-Each of this exercises are stored in their respective folder with a Server and Client folder. The Server serves are a API provider and Client serves as a API consumer.
+Each of this exercises are stored in their respective folder with a Server and Client folder. The Server serves as a API provider and Client serves as a API consumer. Please complete the exercises based on the sequence above.
+
+There is also a folder BrokenObjectLevelDemo which contains codes there will be used to demonstrate Broken Object Level Authorization with Burp Suite. No code changes are required in the folder.
 
 ## Setup
 You will need NodeJs for this exercises. You can install NodeJs from here: https://nodejs.org/en/
