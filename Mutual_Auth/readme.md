@@ -13,7 +13,7 @@ The client has to provide their Public Cert to gain access to the API exposed.
 Implement the required configurations to ensure that Server checks if the Client's cert is valid and is signed by a trusted CA.
 The client should also cross check with Server's CA to ensure that the cert which is presented by the server is valid and trusted.
 
-Modify between Line 13 to Line 19 for Server/app.js to include the relevant certs and CA. Cert Authentication should also be enabled (Cert Request).
+Modify between Line 13 to Line 21 for Server/app.js to include the relevant certs and CA. Cert Authentication should also be enabled (Cert Request).
 Modify between Line 16 to Line 21 for Client/app.js to configure the relevant certs and CA
 
 Both app.js in Server and Client needs to be modified to get Mutual Authentication working.
