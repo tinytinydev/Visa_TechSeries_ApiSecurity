@@ -34,3 +34,16 @@ Upon successful implementation, these messages will be displayed accordingly
 ## Testing the Code
 Run app.js on both Server and Client folder to see the output.
 
+You can also run the startup script to test the output: 
+
+Start the shell script (startup.sh) on a Mac machine using this command
+```
+    ./start.sh
+```
+
+Start the powershell script (startup.ps1) on a Windows machine using this command
+```
+    powershell .\startup.ps1
+```
+Enter Mutual_Auth when prompted for which project to start.
+
