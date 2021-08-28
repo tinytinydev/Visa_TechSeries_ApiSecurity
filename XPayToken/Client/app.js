@@ -17,7 +17,7 @@ const sharedSecret = "TechSeries@Smu";
 /** DO NOT CHANGE THIS END */
 
 /** Modify START */
-var preHashString = "" //Concatenate all the required fields togethers
+var preHashString = "" //Concatenate all the required fields togethers, HINT: You will need to stringify the Json data
 var hashString = "" //Using crypto library to generate a SHA256 HMAC value  
 var xPayToken = 'xv2:' + "MODIFY THIS" + ':' + "MODIFY THIS TOO" ;
 /** Modify END */

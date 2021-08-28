@@ -55,7 +55,7 @@ You can run the app by calling this command on Terminal in Visual Studio Code
 ```
 node app.js
 ```
-A shell script and powershell script (startup.sh/startup.ps1) has been written to help start the project easily. You will be prompted to enter the project you want to start. Either either Basic_Auth , Mutual_Auth or XPayToken to start the project you woul like to test.
+A shell script and powershell script (startup.sh/startup.ps1) has been written to help start the project easily. You will be prompted to enter the project you want to start. Either either Basic_Auth , Mutual_Auth or XPayToken to start the project you would like to test.
 
 Start the shell script (startup.sh) on a Mac machine using this command
 ```
